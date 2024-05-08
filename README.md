@@ -14,6 +14,12 @@
 - Starts May 10, 2024 20:00 UTC
 - Ends May 27, 2024 20:00 UTC
 
+**IMPORTANT NOTE:** Prior to receiving payment from this audit you MUST:
+1. Become a [Certified Contributor](https://docs.code4rena.com/roles/certified-contributors) (successfully complete KYC)
+2. Have a wallet that supports payout via Arbitrum.
+
+You do not have to become certified before submitting bugs. But you must successfully complete the certification process within 30 days of the audit end date in order to receive awards. This applies to all audit participants, including wardens, teams, judges, validators, and scouts.
+
 ## Automated Findings / Publicly Known Issues
 
 The 4naly3er report can be found [here](https://github.com/code-423n4/2024-05-arbitrum-foundation/blob/main/4naly3er-report.md).
@@ -32,7 +38,7 @@ _Note for C4 wardens: Anything included in this `Automated Findings / Publicly K
 - Compromised keys are out of scope
 - Centralization risk is out-of-scope
 - Example: https://github.com/code-423n4/2023-08-arbitrum?tab=readme-ov-file#known-risks
-- Any issues whose root cause exists in nitro-contracts@xxxxxx is considered out of scope but may be eligible for Immunefi.
+- Any issues whose root cause exists in nitro-contracts@xxxxxx is considered out of scope but may be eligible for our [bug bounty](https://immunefi.com/bug-bounty/arbitrum/).
 
 
 ✅ SCOUTS: Please format the response above 👆 so its not a wall of text and its readable.
