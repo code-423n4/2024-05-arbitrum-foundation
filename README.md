@@ -47,9 +47,9 @@ _Note for C4 wardens: Anything included in this `Automated Findings / Publicly K
 - **Previous audits:**  [We will have the public report ready by May 7th]
   - ✅ SCOUTS: If there are multiple report links, please format them in a list.
 - **Documentation:** https://linktr.ee/arbitrumbold
-- **Website:** 🐺 CA: add a link to the sponsor's website
-- **X/Twitter:** 🐺 CA: add a link to the sponsor's Twitter
-- **Discord:** 🐺 CA: add a link to the sponsor's Discord
+- **Website:** https://arbitrum.foundation/
+- **X/Twitter:** https://twitter.com/arbitrum
+- **Discord:** https://discord.com/invite/arbitrum
 
 ---
 
