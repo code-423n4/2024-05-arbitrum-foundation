@@ -8,8 +8,8 @@
   - Judge awards: $15,000 in USDC
   - Validator awards: $10,000 in USDC
   - Scout awards: $500 in USDC
-- To receive payout for this audit, wardens must be certified within 30 days of audit close.
-- All payouts will done via the Arbitrum network. Please ensure your registered wallet address is compatible to receive payment.
+  - To receive payout for this audit, wardens must be certified within 30 days of audit close.
+  - All payouts will done via the Arbitrum network. Please ensure your registered wallet address is compatible to receive payment.
 - Join [C4 Discord](https://discord.gg/code4rena) to register
 - Submit findings [using the C4 form](https://code4rena.com/contests/2024-05-arbitrum-foundation/submit)
 - [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
