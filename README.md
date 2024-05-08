@@ -32,6 +32,7 @@ _Note for C4 wardens: Anything included in this `Automated Findings / Publicly K
 - Compromised keys are out of scope
 - Centralization risk is out-of-scope
 - Example: https://github.com/code-423n4/2023-08-arbitrum?tab=readme-ov-file#known-risks
+- Any issues whose root cause exists in nitro-contracts@xxxxxx is considered out of scope but may be eligible for Immunefi.
 
 
 ✅ SCOUTS: Please format the response above 👆 so its not a wall of text and its readable.
@@ -60,6 +61,49 @@ _Note for C4 wardens: Anything included in this `Automated Findings / Publicly K
 - ✅ Last row of the table should be Total: SLOC
 - ✅ SCOUTS: Have the sponsor review and and confirm in text the details in the section titled "Scoping Q amp; A"
 
+contracts/src/assertionStakingPool/AbsBoldStakingPool.sol
+contracts/src/assertionStakingPool/AssertionStakingPoolCreator.sol
+contracts/src/assertionStakingPool/AssertionStakingPool.sol
+contracts/src/assertionStakingPool/EdgeStakingPoolCreator.sol
+contracts/src/assertionStakingPool/EdgeStakingPool.sol
+contracts/src/assertionStakingPool/interfaces/IAbsBoldStakingPool.sol
+contracts/src/assertionStakingPool/interfaces/IAssertionStakingPoolCreator.sol
+contracts/src/assertionStakingPool/interfaces/IAssertionStakingPool.sol
+contracts/src/assertionStakingPool/interfaces/IEdgeStakingPoolCreator.sol
+contracts/src/assertionStakingPool/interfaces/IEdgeStakingPool.sol
+contracts/src/assertionStakingPool/StakingPoolCreatorUtils.sol
+
+contracts/src/bridge/DelayBuffer.sol
+contracts/src/bridge/DelayBufferTypes.sol
+contracts/src/bridge/ISequencerInbox.sol
+contracts/src/bridge/SequencerInbox.sol
+
+contracts/src/challengeV2/EdgeChallengeManager.sol
+contracts/src/challengeV2/IAssertionChain.sol
+contracts/src/challengeV2/libraries/ArrayUtilsLib.sol
+contracts/src/challengeV2/libraries/ChallengeEdgeLib.sol
+contracts/src/challengeV2/libraries/ChallengeErrors.sol
+contracts/src/challengeV2/libraries/EdgeChallengeManagerLib.sol
+contracts/src/challengeV2/libraries/Enums.sol
+contracts/src/challengeV2/libraries/MerkleTreeLib.sol
+contracts/src/challengeV2/libraries/UintUtilsLib.sol
+
+contracts/src/libraries/Error.sol
+
+contracts/src/rollup/Assertion.sol
+contracts/src/rollup/AssertionState.sol
+contracts/src/rollup/BOLDUpgradeAction.sol
+contracts/src/rollup/BridgeCreator.sol
+contracts/src/rollup/Config.sol
+contracts/src/rollup/IRollupAdmin.sol
+contracts/src/rollup/IRollupCore.sol
+contracts/src/rollup/IRollupLogic.sol
+contracts/src/rollup/RollupAdminLogic.sol
+contracts/src/rollup/RollupCore.sol
+contracts/src/rollup/RollupCreator.sol
+contracts/src/rollup/RollupLib.sol
+contracts/src/rollup/RollupProxy.sol
+contracts/src/rollup/RollupUserLogic.sol
 *For sponsors that don't use the scoping tool: list all files in scope in the table below (along with hyperlinks) -- and feel free to add notes to emphasize areas of focus.*
 
 | Contract | SLOC | Purpose | Libraries used |  
