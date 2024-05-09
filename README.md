@@ -44,9 +44,11 @@ _Note for C4 wardens: Anything included in this `Automated Findings / Publicly K
 
 # Overview
 
-Enabling permissionless validation has long been a goal of Arbitrum on the progressive journey towards decentralization. Today, Arbitrum One and Arbitrum Nova rely on a permissioned set of valdiators to prevent delay attacks against the current rollup protocol - a class of attacks where actors can indefinitely open disputes and delay on-chain confirmations. 
+How about:
 
-Arbitrum BOLD is a new dispute protocol that enables permissionless validation by mitigating the risks of delay attacks with a fixed upper time bound for challenge resolution. Specifically, BOLD is an upgrade to the current interactive & fully operational fraud proof system that secures all Arbitrum chains in production today, including Arbitrum One.
+> Enabling permissionless validation has long been a goal of Arbitrum on the [progressive journey towards decentralization](https://docs.arbitrum.foundation/state-of-progressive-decentralization). Today, Arbitrum One and Arbitrum Nova rely on a permissioned set of valdiators to prevent *[delay attacks](https://medium.com/offchainlabs/solutions-to-delay-attacks-on-rollups-434f9d05a07a)* against the current rollup protocol - a class of attacks where actors can indefinitely open disputes and delay on-chain confirmations. 
+> 
+> Arbitrum BOLD is a new dispute protocol that enables permissionless validation by mitigating the risks of delay attacks with a fixed upper time bound for challenge resolution. Specifically, BOLD is an upgrade to the current interactive & fully operational fraud proof system that secures all Arbitrum chains in production today, including Arbitrum One.
 
 ## Links
 
