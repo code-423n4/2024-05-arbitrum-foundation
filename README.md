@@ -41,7 +41,6 @@ _Note for C4 wardens: Anything included in this `Automated Findings / Publicly K
 - Any issues whose root cause exists in nitro-contracts@xxxxxx is considered out of scope but may be eligible for our [bug bounty](https://immunefi.com/bug-bounty/arbitrum/).
 
 
-✅ SCOUTS: Please format the response above 👆 so its not a wall of text and its readable.
 
 # Overview
 
@@ -253,7 +252,7 @@ _Note for C4 wardens: Anything included in this `Automated Findings / Publicly K
 | Question                                | Answer                       |
 | --------------------------------------- | ---------------------------- |
 | ERC20 used by the protocol              |       None             |
-| Test coverage                           | ✅ SCOUTS: Please populate this after running the test coverage command                          |
+| Test coverage                           |   74.43% (946/1271 lines, see more details below)      |
 | ERC721 used  by the protocol            |            None              |
 | ERC777 used by the protocol             |           None                |
 | ERC1155 used by the protocol            |              None            |
@@ -308,29 +307,51 @@ N/A
 
 ## Running tests
 
-The README has instructions for running go tests. 
-To run foundry tests:
-
-cd contracts
-forge test # use --gas-report (some irrelevant tests will fail though)
-
-✅ SCOUTS: Please format the response above 👆 using the template below👇
-
 ```bash
-git clone https://github.com/code-423n4/2023-08-arbitrum
+git clone https://github.com/code-423n4/2024-05-arbitrum-foundation
+cd 2024-05-arbitrum-foundation
 git submodule update --init --recursive
-cd governance
-foundryup
-make install
-make build
-make sc-election-test
+yarn
+
+forge test 
 ```
 To run code coverage
 ```bash
-make coverage
+# same as above, just for the last command:
+forge coverage
 ```
 
-✅ SCOUTS: Add a screenshot of your terminal showing the test coverage
+## Coverage
+
+*note that interfaces and contracts without logic (e.g. Error.sol, Config.sol) are excluded*
+
+| File                                                     | % Lines            | % Statements       | % Branches        | % Funcs          |
+|----------------------------------------------------------|--------------------|--------------------|-------------------|------------------|
+| src/assertionStakingPool/AbsBoldStakingPool.sol          | 86.67% (13/15)     | 86.67% (13/15)     | 66.67% (4/6)      | 100.00% (4/4)    |
+| src/assertionStakingPool/AssertionStakingPool.sol        | 77.78% (7/9)       | 77.78% (7/9)       | 100.00% (0/0)     | 80.00% (4/5)     |
+| src/assertionStakingPool/AssertionStakingPoolCreator.sol | 100.00% (4/4)      | 100.00% (6/6)      | 100.00% (0/0)     | 100.00% (2/2)    |
+| src/assertionStakingPool/EdgeStakingPool.sol             | 100.00% (7/7)      | 100.00% (9/9)      | 100.00% (2/2)     | 100.00% (2/2)    |
+| src/assertionStakingPool/EdgeStakingPoolCreator.sol      | 100.00% (4/4)      | 100.00% (6/6)      | 100.00% (0/0)     | 100.00% (2/2)    |
+| src/assertionStakingPool/StakingPoolCreatorUtils.sol     | 80.00% (4/5)       | 85.71% (6/7)       | 50.00% (1/2)      | 100.00% (1/1)    |
+| src/bridge/DelayBuffer.sol                               | 95.65% (22/23)     | 88.57% (31/35)     | 100.00% (6/6)     | 83.33% (5/6)     |
+| src/bridge/SequencerInbox.sol                            | 49.54% (108/218)   | 46.39% (148/319)   | 36.76% (50/136)   | 48.89% (22/45)   |
+| src/challengeV2/EdgeChallengeManager.sol                 | 93.75% (105/112)   | 93.51% (144/154)   | 88.00% (44/50)    | 82.61% (19/23)   |
+| src/challengeV2/libraries/ArrayUtilsLib.sol              | 100.00% (17/17)    | 100.00% (28/28)    | 100.00% (4/4)     | 100.00% (3/3)    |
+| src/challengeV2/libraries/ChallengeEdgeLib.sol           | 98.00% (49/50)     | 98.53% (67/68)     | 96.67% (29/30)    | 100.00% (16/16)  |
+| src/challengeV2/libraries/EdgeChallengeManagerLib.sol    | 97.92% (188/192)   | 98.31% (232/236)   | 94.32% (83/88)    | 100.00% (23/23)  |
+| src/challengeV2/libraries/MerkleTreeLib.sol              | 98.68% (75/76)     | 98.99% (98/99)     | 87.10% (54/62)    | 100.00% (7/7)    |
+| src/challengeV2/libraries/UintUtilsLib.sol               | 100.00% (26/26)    | 100.00% (29/29)    | 100.00% (20/20)   | 100.00% (2/2)    |
+| src/rollup/Assertion.sol                                 | 100.00% (11/11)    | 100.00% (11/11)    | 100.00% (6/6)     | 100.00% (3/3)    |
+| src/rollup/AssertionState.sol                            | 100.00% (2/2)      | 100.00% (4/4)      | 100.00% (0/0)     | 100.00% (2/2)    |
+| src/rollup/BOLDUpgradeAction.sol                         | 0.00% (0/123)      | 0.00% (0/151)      | 0.00% (0/24)      | 0.00% (0/20)     |
+| src/rollup/BridgeCreator.sol                             | 100.00% (23/23)    | 100.00% (26/26)    | 50.00% (1/2)      | 100.00% (5/5)    |
+| src/rollup/RollupAdminLogic.sol                          | 58.43% (52/89)     | 60.20% (59/98)     | 27.27% (6/22)     | 39.13% (9/23)    |
+| src/rollup/RollupCore.sol                                | 86.99% (107/123)   | 86.39% (127/147)   | 52.08% (25/48)    | 80.00% (24/30)   |
+| src/rollup/RollupCreator.sol                             | 73.68% (42/57)     | 69.74% (53/76)     | 31.82% (7/22)     | 66.67% (4/6)     |
+| src/rollup/RollupLib.sol                                 | 100.00% (6/6)      | 100.00% (7/7)      | 50.00% (1/2)      | 100.00% (4/4)    |
+| src/rollup/RollupProxy.sol                               | 80.00% (4/5)       | 92.31% (12/13)     | 50.00% (1/2)      | 100.00% (1/1)    |
+| src/rollup/RollupUserLogic.sol                           | 94.59% (70/74)     | 91.30% (84/92)     | 71.67% (43/60)    | 90.48% (19/21)   |
+| Total                                       | 74.43% (946/1271) | 73.37% (1207/1645) | 65.15% (387/594) | 71.48% (183/256) |
 
 ## Miscellaneous
 Employees of Arbitrum and employees' family members are ineligible to participate in this audit.
