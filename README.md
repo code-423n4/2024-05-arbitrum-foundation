@@ -1,5 +1,5 @@
 # Arbitrum BoLD audit details
-- Total Prize Pool: Up to $300,000 in USDC
+- Total Prize Pool: Up to $300,500 in USDC
   - HM awards: Up to $235,000 in USDC
     - If one or more valid High severity findings are found, the HM pool is $235,000 in USDC
     - If one or more valid Medium severity findings are found, the HM pool is $85,000 in USDC
