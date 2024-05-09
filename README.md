@@ -60,125 +60,73 @@ _Note for C4 wardens: Anything included in this `Automated Findings / Publicly K
 
 # Scope
 
-[ ✅ SCOUTS: add scoping and technical details here ]
 
 ### Files in scope
-- ✅ This should be completed using the `metrics.md` file
-- ✅ Last row of the table should be Total: SLOC
-- ✅ SCOUTS: Have the sponsor review and and confirm in text the details in the section titled "Scoping Q amp; A"
 
-contracts/src/assertionStakingPool/AbsBoldStakingPool.sol
-contracts/src/assertionStakingPool/AssertionStakingPoolCreator.sol
-contracts/src/assertionStakingPool/AssertionStakingPool.sol
-contracts/src/assertionStakingPool/EdgeStakingPoolCreator.sol
-contracts/src/assertionStakingPool/EdgeStakingPool.sol
-contracts/src/assertionStakingPool/interfaces/IAbsBoldStakingPool.sol
-contracts/src/assertionStakingPool/interfaces/IAssertionStakingPoolCreator.sol
-contracts/src/assertionStakingPool/interfaces/IAssertionStakingPool.sol
-contracts/src/assertionStakingPool/interfaces/IEdgeStakingPoolCreator.sol
-contracts/src/assertionStakingPool/interfaces/IEdgeStakingPool.sol
-contracts/src/assertionStakingPool/StakingPoolCreatorUtils.sol
+*See [scope.txt](https://github.com/code-423n4/2024-05-arbitrum-foundation/blob/main/scope.txt)*
 
-contracts/src/bridge/DelayBuffer.sol
-contracts/src/bridge/DelayBufferTypes.sol
-contracts/src/bridge/ISequencerInbox.sol
-contracts/src/bridge/SequencerInbox.sol
-
-contracts/src/challengeV2/EdgeChallengeManager.sol
-contracts/src/challengeV2/IAssertionChain.sol
-contracts/src/challengeV2/libraries/ArrayUtilsLib.sol
-contracts/src/challengeV2/libraries/ChallengeEdgeLib.sol
-contracts/src/challengeV2/libraries/ChallengeErrors.sol
-contracts/src/challengeV2/libraries/EdgeChallengeManagerLib.sol
-contracts/src/challengeV2/libraries/Enums.sol
-contracts/src/challengeV2/libraries/MerkleTreeLib.sol
-contracts/src/challengeV2/libraries/UintUtilsLib.sol
-
-contracts/src/libraries/Error.sol
-
-contracts/src/rollup/Assertion.sol
-contracts/src/rollup/AssertionState.sol
-contracts/src/rollup/BOLDUpgradeAction.sol
-contracts/src/rollup/BridgeCreator.sol
-contracts/src/rollup/Config.sol
-contracts/src/rollup/IRollupAdmin.sol
-contracts/src/rollup/IRollupCore.sol
-contracts/src/rollup/IRollupLogic.sol
-contracts/src/rollup/RollupAdminLogic.sol
-contracts/src/rollup/RollupCore.sol
-contracts/src/rollup/RollupCreator.sol
-contracts/src/rollup/RollupLib.sol
-contracts/src/rollup/RollupProxy.sol
-contracts/src/rollup/RollupUserLogic.sol
-*For sponsors that don't use the scoping tool: list all files in scope in the table below (along with hyperlinks) -- and feel free to add notes to emphasize areas of focus.*
-
-| Contract | SLOC | Purpose | Libraries used |  
-| ----------- | ----------- | ----------- | ----------- |
-| [contracts/folder/sample.sol](https://github.com/code-423n4/repo-name/blob/contracts/folder/sample.sol) | 123 | This contract does XYZ | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| File                                                                 | Logic Contracts | Interfaces | nSLOC    | Purpose | Libraries used |
+|----------------------------------------------------------------------|-----------------|------------|----------|---------|----------------|
+| src/libraries/Error.sol                                              |                 |            | 69       |         |                |
+| src/challengeV2/IAssertionChain.sol                                  |                 | 1          | 6        |         |                |
+| src/challengeV2/EdgeChallengeManager.sol                             | 1               | 1          | 286      |         |                |
+| src/bridge/SequencerInbox.sol                                        | 1               |            | 594      |         |                |
+| src/bridge/ISequencerInbox.sol                                       |                 | 1          | 32       |         |                |
+| src/bridge/DelayBufferTypes.sol                                      |                 |            | 19       |         |                |
+| src/bridge/DelayBuffer.sol                                           | 1               |            | 54       |         |                |
+| src/assertionStakingPool/StakingPoolCreatorUtils.sol                 | 1               |            | 15       |         |                |
+| src/assertionStakingPool/EdgeStakingPoolCreator.sol                  | 1               |            | 19       |         |                |
+| src/assertionStakingPool/EdgeStakingPool.sol                         | 1               |            | 26       |         |                |
+| src/assertionStakingPool/AssertionStakingPoolCreator.sol             | 1               |            | 19       |         |                |
+| src/assertionStakingPool/AssertionStakingPool.sol                    | 1               |            | 32       |         |                |
+| src/assertionStakingPool/AbsBoldStakingPool.sol                      | 1               |            | 35       |         |                |
+| src/rollup/RollupUserLogic.sol                                       | 1               |            | 154      |         |                |
+| src/rollup/RollupProxy.sol                                           | 1               |            | 27       |         |                |
+| src/rollup/RollupLib.sol                                             | 1               |            | 55       |         |                |
+| src/rollup/RollupCreator.sol                                         | 1               |            | 216      |         |                |
+| src/rollup/RollupCore.sol                                            | 1               |            | 282      |         |                |
+| src/rollup/RollupAdminLogic.sol                                      | 1               |            | 173      |         |                |
+| src/rollup/IRollupLogic.sol                                          |                 | 1          | 7        |         |                |
+| src/rollup/IRollupCore.sol                                           |                 | 1          | 35       |         |                |
+| src/rollup/IRollupAdmin.sol                                          |                 | 1          | 9        |         |                |
+| src/rollup/Config.sol                                                |                 |            | 42       |         |                |
+| src/rollup/BridgeCreator.sol                                         | 1               |            | 98       |         |                |
+| src/rollup/BOLDUpgradeAction.sol                                     | 4               | 3          | 391      |         |                |
+| src/rollup/AssertionState.sol                                        | 1               |            | 17       |         |                |
+| src/rollup/Assertion.sol                                             | 1               |            | 52       |         |                |
+| src/challengeV2/libraries/UintUtilsLib.sol                           | 1               |            | 40       |         |                |
+| src/challengeV2/libraries/MerkleTreeLib.sol                          | 1               |            | 118      |         |                |
+| src/challengeV2/libraries/Enums.sol                                  |                 |            | 10       |         |                |
+| src/challengeV2/libraries/EdgeChallengeManagerLib.sol                | 1               |            | 396      |         |                |
+| src/challengeV2/libraries/ChallengeErrors.sol                        |                 |            | 54       |         |                |
+| src/challengeV2/libraries/ChallengeEdgeLib.sol                       | 1               |            | 158      |         |                |
+| src/challengeV2/libraries/ArrayUtilsLib.sol                          | 1               |            | 30       |         |                |
+| src/assertionStakingPool/interfaces/IEdgeStakingPoolCreator.sol      |                 | 1          | 5        |         |                |
+| src/assertionStakingPool/interfaces/IEdgeStakingPool.sol             |                 | 1          | 6        |         |                |
+| src/assertionStakingPool/interfaces/IAssertionStakingPoolCreator.sol |                 | 1          | 10       |         |                |
+| src/assertionStakingPool/interfaces/IAssertionStakingPool.sol        |                 | 1          | 5        |         |                |
+| src/assertionStakingPool/interfaces/IAbsBoldStakingPool.sol          |                 | 1          | 7        |         |                |
+| **Total:**                                                           |          **27** |     **14** | **3603** |         |                |
 
 ### Files out of scope
-✅ SCOUTS: List files/directories out of scope
+
+*See [out_of_scope.txt](https://github.com/code-423n4/2024-04-renzo/blob/main/scope.txt)*
+
 
 ## Scoping Q &amp; A
 
 ### General questions
-### Are there any ERC20's in scope?: No
 
-✅ SCOUTS: If the answer above 👆 is "Yes", please add the tokens below 👇 to the table. Otherwise, update the column with "None".
-
-
-
-
-### Are there any ERC777's in scope?: 
-
-✅ SCOUTS: If the answer above 👆 is "Yes", please add the tokens below 👇 to the table. Otherwise, update the column with "None".
-
-
-
-### Are there any ERC721's in scope?: No
-
-✅ SCOUTS: If the answer above 👆 is "Yes", please add the tokens below 👇 to the table. Otherwise, update the column with "None".
-
-
-
-### Are there any ERC1155's in scope?: No
-
-✅ SCOUTS: If the answer above 👆 is "Yes", please add the tokens below 👇 to the table. Otherwise, update the column with "None".
-
-
-
-✅ SCOUTS: Once done populating the table below, please remove all the Q/A data above.
 
 | Question                                | Answer                       |
 | --------------------------------------- | ---------------------------- |
-| ERC20 used by the protocol              |       🖊️             |
+| ERC20 used by the protocol              |       None             |
 | Test coverage                           | ✅ SCOUTS: Please populate this after running the test coverage command                          |
-| ERC721 used  by the protocol            |            🖊️              |
-| ERC777 used by the protocol             |           🖊️                |
-| ERC1155 used by the protocol            |              🖊️            |
+| ERC721 used  by the protocol            |            None              |
+| ERC777 used by the protocol             |           None                |
+| ERC1155 used by the protocol            |              None            |
 | Chains the protocol will be deployed on | Ethereum,Arbitrum |
 
-### ERC20 token behaviors in scope
-
-| Question                                                                                                                                                   | Answer |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| [Missing return values](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#missing-return-values)                                                      |    |
-| [Fee on transfer](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#fee-on-transfer)                                                                  |   |
-| [Balance changes outside of transfers](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#balance-modifications-outside-of-transfers-rebasingairdrops) |    |
-| [Upgradeability](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#upgradable-tokens)                                                                 |    |
-| [Flash minting](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#flash-mintable-tokens)                                                              |    |
-| [Pausability](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#pausable-tokens)                                                                      |    |
-| [Approval race protections](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#approval-race-protections)                                              |    |
-| [Revert on approval to zero address](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#revert-on-approval-to-zero-address)                            |    |
-| [Revert on zero value approvals](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#revert-on-zero-value-approvals)                                    |    |
-| [Revert on zero value transfers](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#revert-on-zero-value-transfers)                                    |    |
-| [Revert on transfer to the zero address](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#revert-on-transfer-to-the-zero-address)                    |    |
-| [Revert on large approvals and/or transfers](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#revert-on-large-approvals--transfers)                  |    |
-| [Doesn't revert on failure](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#no-revert-on-failure)                                                   |    |
-| [Multiple token addresses](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#revert-on-zero-value-transfers)                                          |    |
-| [Low decimals ( < 6)](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#low-decimals)                                                                 |    |
-| [High decimals ( > 18)](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#high-decimals)                                                              |    |
-| [Blocklists](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#tokens-with-blocklists)                                                                |    |
 
 ### External integrations (e.g., Uniswap) behavior in scope:
 
@@ -193,13 +141,6 @@ contracts/src/rollup/RollupUserLogic.sol
 ### EIP compliance checklist
 N/A
 
-✅ SCOUTS: Please format the response above 👆 using the template below👇
-
-| Question                                | Answer                       |
-| --------------------------------------- | ---------------------------- |
-| src/Token.sol                           | ERC20, ERC721                |
-| src/NFT.sol                             | ERC721                       |
-
 
 # Additional context
 
@@ -211,8 +152,6 @@ N/A
     - plus the security council grace period for assertions
 - Edge ID’s and Assertion ID’s must be unique
 
-✅ SCOUTS: Please format the response above 👆 so its not a wall of text and its readable.
-
 ## Attack ideas (where to focus for bugs)
 - Assuming there is at least one honest participant, no incorrect assertions or edges can be confirmed.
 - Honest parties can always retrieve their assertion stakes and challenge bonds
@@ -220,26 +159,20 @@ N/A
 - Issues that the security council could fix during the grace period are still in scope if they are the result of an incorrect resolution of the challenge protocol.
 
 
-✅ SCOUTS: Please format the response above 👆 so its not a wall of text and its readable.
-
 ## All trusted roles in the protocol
-
-`excessStakeReceiver` will be set to a DAO controlled address. Used to reimburse honest validators.
-
-There is a “grace period” after assertions are confirmed via challenge. This is to ensure the result of the challenge is widely observable before it causes an assertion to be confirmed. The security council can act within this grace period in the event a bad assertion is confirmed.
-
-✅ SCOUTS: Please format the response above 👆 using the template below👇
 
 | Role                                | Description                       |
 | --------------------------------------- | ---------------------------- |
-| Owner                          | Has superpowers                |
-| Administrator                             | Can change fees                       |
+| `excessStakeReceiver`                          | will be set to a DAO controlled address. Used to reimburse honest validators |
+
+ 
+Note: there is a “grace period” after assertions are confirmed via challenge. This is to ensure the result of the challenge is widely observable before it causes an assertion to be confirmed. The security council can act within this grace period in the event a bad assertion is confirmed.
+
 
 ## Describe any novel or unique curve logic or mathematical models implemented in the contracts:
 
 N/A
 
-✅ SCOUTS: Please format the response above 👆 so its not a wall of text and its readable.
 
 ## Running tests
 
@@ -264,12 +197,7 @@ To run code coverage
 ```bash
 make coverage
 ```
-To run gas benchmarks
-```bash
-make gas
-```
 
-✅ SCOUTS: Add a screenshot of your terminal showing the gas report
 ✅ SCOUTS: Add a screenshot of your terminal showing the test coverage
 
 ## Miscellaneous
