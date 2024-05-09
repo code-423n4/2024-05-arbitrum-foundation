@@ -37,7 +37,7 @@ _Note for C4 wardens: Anything included in this `Automated Findings / Publicly K
 - We assume that an adversary can censor transactions for at most 1 `challengePeriodBlocks` or `confirmPeriodBlock` (whichever is smaller)
 - Compromised keys are out of scope
 - Centralization risk is out-of-scope
-- Any issues whose root cause exists in nitro-contracts@xxxxxx is considered out of scope but may be eligible for our [bug bounty](https://immunefi.com/bug-bounty/arbitrum/).
+- Any issues whose root cause exists in [nitro-contracts@77ee9de](https://github.com/OffchainLabs/nitro-contracts/commit/77ee9de042de225fab560096f7624f3d13bd12cb) is considered out of scope but may be eligible for our [bug bounty](https://immunefi.com/bug-bounty/arbitrum/).
 
 
 
