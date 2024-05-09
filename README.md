@@ -69,45 +69,45 @@ Arbitrum BOLD is a new dispute protocol that enables permissionless validation b
 
 | File                                                                 | Logic Contracts | Interfaces | nSLOC    | Purpose | Libraries used |
 |----------------------------------------------------------------------|-----------------|------------|----------|---------|----------------|
-| src/libraries/Error.sol                                              |                 |            | 69       |         |                |
-| src/challengeV2/IAssertionChain.sol                                  |                 | 1          | 6        |         |                |
-| src/challengeV2/EdgeChallengeManager.sol                             | 1               | 1          | 286      |         |                |
-| src/bridge/SequencerInbox.sol                                        | 1               |            | 594      |         |                |
-| src/bridge/ISequencerInbox.sol                                       |                 | 1          | 32       |         |                |
-| src/bridge/DelayBufferTypes.sol                                      |                 |            | 19       |         |                |
-| src/bridge/DelayBuffer.sol                                           | 1               |            | 54       |         |                |
-| src/assertionStakingPool/StakingPoolCreatorUtils.sol                 | 1               |            | 15       |         |                |
-| src/assertionStakingPool/EdgeStakingPoolCreator.sol                  | 1               |            | 19       |         |                |
-| src/assertionStakingPool/EdgeStakingPool.sol                         | 1               |            | 26       |         |                |
-| src/assertionStakingPool/AssertionStakingPoolCreator.sol             | 1               |            | 19       |         |                |
-| src/assertionStakingPool/AssertionStakingPool.sol                    | 1               |            | 32       |         |                |
-| src/assertionStakingPool/AbsBoldStakingPool.sol                      | 1               |            | 35       |         |                |
-| src/rollup/RollupUserLogic.sol                                       | 1               |            | 154      |         |                |
-| src/rollup/RollupProxy.sol                                           | 1               |            | 27       |         |                |
-| src/rollup/RollupLib.sol                                             | 1               |            | 55       |         |                |
-| src/rollup/RollupCreator.sol                                         | 1               |            | 216      |         |                |
-| src/rollup/RollupCore.sol                                            | 1               |            | 282      |         |                |
-| src/rollup/RollupAdminLogic.sol                                      | 1               |            | 173      |         |                |
-| src/rollup/IRollupLogic.sol                                          |                 | 1          | 7        |         |                |
-| src/rollup/IRollupCore.sol                                           |                 | 1          | 35       |         |                |
-| src/rollup/IRollupAdmin.sol                                          |                 | 1          | 9        |         |                |
-| src/rollup/Config.sol                                                |                 |            | 42       |         |                |
-| src/rollup/BridgeCreator.sol                                         | 1               |            | 98       |         |                |
-| src/rollup/BOLDUpgradeAction.sol                                     | 4               | 3          | 391      |         |                |
-| src/rollup/AssertionState.sol                                        | 1               |            | 17       |         |                |
-| src/rollup/Assertion.sol                                             | 1               |            | 52       |         |                |
-| src/challengeV2/libraries/UintUtilsLib.sol                           | 1               |            | 40       |         |                |
-| src/challengeV2/libraries/MerkleTreeLib.sol                          | 1               |            | 118      |         |                |
-| src/challengeV2/libraries/Enums.sol                                  |                 |            | 10       |         |                |
-| src/challengeV2/libraries/EdgeChallengeManagerLib.sol                | 1               |            | 396      |         |                |
-| src/challengeV2/libraries/ChallengeErrors.sol                        |                 |            | 54       |         |                |
-| src/challengeV2/libraries/ChallengeEdgeLib.sol                       | 1               |            | 158      |         |                |
-| src/challengeV2/libraries/ArrayUtilsLib.sol                          | 1               |            | 30       |         |                |
-| src/assertionStakingPool/interfaces/IEdgeStakingPoolCreator.sol      |                 | 1          | 5        |         |                |
-| src/assertionStakingPool/interfaces/IEdgeStakingPool.sol             |                 | 1          | 6        |         |                |
-| src/assertionStakingPool/interfaces/IAssertionStakingPoolCreator.sol |                 | 1          | 10       |         |                |
-| src/assertionStakingPool/interfaces/IAssertionStakingPool.sol        |                 | 1          | 5        |         |                |
-| src/assertionStakingPool/interfaces/IAbsBoldStakingPool.sol          |                 | 1          | 7        |         |                |
+| src/libraries/Error.sol                                              |                 |            | 69       | Errors        |                |
+| src/challengeV2/IAssertionChain.sol                                  |                 | 1          | 6        | Interface that the Challenge Manager uses to interact with the assertion chain / rollup        |                |
+| src/challengeV2/EdgeChallengeManager.sol                             | 1               | 1          | 286      | The main Challenge Manager contract. Validators create edges, bisect edges, update timers, prove edges, confirm edges, etc | `EdgeChallengeManagerLib`, `ChallengeEdgeLib`, OZ `SafeERC20` |
+| src/bridge/SequencerInbox.sol                                        | 1               |            | 594      | Accepts batches of transactions from the Sequencer | `ArbitrumChecker`, `Messages`, `DelayBuffer` |
+| src/bridge/ISequencerInbox.sol                                       |                 | 1          | 32       | Interface for the Sequencer Inbox        |                |
+| src/bridge/DelayBufferTypes.sol                                      |                 |            | 19       | Types for the delay buffer feature of the Sequencer Inbox | `Messages` |
+| src/bridge/DelayBuffer.sol                                           | 1               |            | 54       | Functions used by the Sequencer Inbox to handle the delay buffer | |
+| src/assertionStakingPool/StakingPoolCreatorUtils.sol                 | 1               |            | 15       | Contains a helper function for staking pool creators to predict CREATE2 addresses | OZ `Create2`, OZ `Address` |
+| src/assertionStakingPool/EdgeStakingPoolCreator.sol                  | 1               |            | 19       | Factory contract for creating new `EdgeStakingPool` contracts | `StakingPoolCreatorUtils` |
+| src/assertionStakingPool/EdgeStakingPool.sol                         | 1               |            | 26       | Trustless staking pool for creating layer zero edges. Each pool commits to creating an edge with specified ID once it has enough deposits | OZ `SafeERC20` |
+| src/assertionStakingPool/AssertionStakingPoolCreator.sol             | 1               |            | 19       | Factory contract for creating new `AssertionStakingPool` contracts | `StakingPoolCreatorUtils` |
+| src/assertionStakingPool/AssertionStakingPool.sol                    | 1               |            | 32       | Trustless staking pool for creating top level assertions. Each pool commits to creating an assertion with specified ID once it has enough deposits | OZ `SafeERC20` |
+| src/assertionStakingPool/AbsBoldStakingPool.sol                      | 1               |            | 35       | Abstract contract handling both staking pools' deposit and withdrawal logic | OZ `SafeERC20` |
+| src/rollup/RollupUserLogic.sol                                       | 1               |            | 154      | Rollup functions that are meant to be called by validators. Inherits `RollupCore` | `AssertionNodeLib`, `GlobalStateLib`, OZ `SafeERC20`, `RollupLib` |
+| src/rollup/RollupProxy.sol                                           | 1               |            | 27       | Proxy with two logic contracts: `RollupUserLogic` and `RollupAdminLogic`||
+| src/rollup/RollupLib.sol                                             | 1               |            | 55       | Hashing utilities for the rollup contracts | `AssertionNodeLib`, `GlobalStateLib` |
+| src/rollup/RollupCreator.sol                                         | 1               |            | 216      | Factory for deploying and initiatializing the full suite of contracts | OZ `SafeERC20` |
+| src/rollup/RollupCore.sol                                            | 1               |            | 282      | Common rollup view functions and internal mutative functions used by `RollupUserLogic` and `RollupAdminLogic` | `AssertionNodeLib`, `GlobalStateLib`, `RollupLib`, `ArbitrumChecker`|
+| src/rollup/RollupAdminLogic.sol                                      | 1               |            | 173      | Rollup functions meant to be called by an admin (such as a security council)| `AssertionStateLib`, `RollupLib` |
+| src/rollup/IRollupLogic.sol                                          |                 | 1          | 7        | Interface for `RollupUserLogic` |                |
+| src/rollup/IRollupCore.sol                                           |                 | 1          | 35       | Interface for `RollupCore`        |                |
+| src/rollup/IRollupAdmin.sol                                          |                 | 1          | 9        | Interface for `RollupAdminLogic`        |                |
+| src/rollup/Config.sol                                                |                 |            | 42       | Structs for rollup configuration        |                |
+| src/rollup/BridgeCreator.sol                                         | 1               |            | 98       | Used by the `RollupCreator` to deploy and initialize the full suite of bridge contracts        |                |
+| src/rollup/BOLDUpgradeAction.sol                                     | 4               | 3          | 391      | Upgrades Arbitrum chains from the old challenge protocol to BOLD. See [Governance Action Contracts](https://github.com/ArbitrumFoundation/governance/blob/main/src/gov-action-contracts/README.md)        | `AssertionNodeLib`, `GlobalStateLib`, `RollupLib` |
+| src/rollup/AssertionState.sol                                        | 1               |            | 17       | Struct and utility functions for Assertion states        |                |
+| src/rollup/Assertion.sol                                             | 1               |            | 52       | Structs and utility functions for Assertions        |                |
+| src/challengeV2/libraries/UintUtilsLib.sol                           | 1               |            | 40       | Functions for getting the most and least significant bits of a `uint256` |                |
+| src/challengeV2/libraries/MerkleTreeLib.sol                          | 1               |            | 118      | Functions for handling binary merkle trees | `MerkleLib`, `ArrayUtilsLib`, `UintUtilsLib` |
+| src/challengeV2/libraries/Enums.sol                                  |                 |            | 10       | `EdgeStatus` and `EdgeType` enums |                |
+| src/challengeV2/libraries/EdgeChallengeManagerLib.sol                | 1               |            | 396      | Main library for Challenge Manager logic | `UintUtilsLib`, `MerkleTreeLib`, `ChallengeEdgeLib`, `GlobalStateLib`, `AssertionStateLib` |
+| src/challengeV2/libraries/ChallengeErrors.sol                        |                 |            | 54       | Challenge Manager errors |                |
+| src/challengeV2/libraries/ChallengeEdgeLib.sol                       | 1               |            | 158      | Struct and utility functions for edges |                |
+| src/challengeV2/libraries/ArrayUtilsLib.sol                          | 1               |            | 30       | Array utilities        |                |
+| src/assertionStakingPool/interfaces/IEdgeStakingPoolCreator.sol      |                 | 1          | 5        | Interface for `EdgeStakingPoolCreator`        |                |
+| src/assertionStakingPool/interfaces/IEdgeStakingPool.sol             |                 | 1          | 6        | Interface for `EdgeStakingPool`        |                |
+| src/assertionStakingPool/interfaces/IAssertionStakingPoolCreator.sol |                 | 1          | 10       | Interface for `AssertionStakingPoolCreator`        |                |
+| src/assertionStakingPool/interfaces/IAssertionStakingPool.sol        |                 | 1          | 5        | Interface for `AssertionStakingPool`        |                |
+| src/assertionStakingPool/interfaces/IAbsBoldStakingPool.sol          |                 | 1          | 7        | Interface for `AbsBoldStakingPool`        |                |
 | **Total:**                                                           |          **27** |     **14** | **3603** |         |                |
 
 ### Files out of scope
@@ -158,7 +158,7 @@ N/A
 - Assuming there is at least one honest participant, no incorrect assertions or edges can be confirmed.
 - Honest parties can always retrieve their assertion stakes and challenge bonds
 - History commitments and their proofs can’t be manipulated somehow.
-- Issues that the security council could fix during the grace period are still in scope if they are the result of an incorrect resolution of the challenge protocol.
+- Issues that the security council could fix are still in scope.
 
 
 ## All trusted roles in the protocol
