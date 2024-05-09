@@ -52,8 +52,7 @@ Arbitrum BOLD is a new dispute protocol that enables permissionless validation b
 
 ## Links
 
-- **Previous audits:**  [We will have the public report ready by May 7th]
-  - ✅ SCOUTS: If there are multiple report links, please format them in a list.
+- **Previous audits:**  [ToB audit](https://github.com/trailofbits/publications/blob/master/reviews/2024-04-offchainbold-securityreview.pdf)
 - **Documentation:** https://linktr.ee/arbitrumbold
 - **Website:** https://arbitrum.foundation/
 - **X/Twitter:** https://twitter.com/arbitrum
