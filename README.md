@@ -18,7 +18,7 @@
 1. Become a [Certified Contributor](https://docs.code4rena.com/roles/certified-contributors) (successfully complete KYC)
 2. Have an address that supports payout via Arbitrum.
 
-You do not have to become certified before submitting bugs. But you must successfully complete the certification process within 30 days of the audit end date in order to receive awards. This applies to all audit participants, including wardens, teams, judges, validators, and scouts.
+You do not have to become certified before submitting bugs. But you must a) successfully complete the certification process and b) supply a wallet to the C4 team that supports Arbitrum payouts within 30 days of the award announcement in order to receive awards. This applies to all audit participants, including wardens, teams, judges, validators, and scouts.
 
 ## Automated Findings / Publicly Known Issues
 
