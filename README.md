@@ -109,7 +109,7 @@ Arbitrum BoLD is a new dispute protocol that enables permissionless validation b
 
 ### Files out of scope
 
-*See [out_of_scope.txt](https://github.com/code-423n4/2024-04-renzo/blob/main/out_of_scope.txt)*
+*See [out_of_scope.txt](https://github.com/code-423n4/2024-05-arbitrum-foundation/blob/main/out_of_scope.txt)*
 
 
 ## Scoping Q &amp; A
