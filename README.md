@@ -16,7 +16,7 @@
 
 **IMPORTANT NOTE:** Prior to receiving payment from this audit you MUST:
 1. Become a [Certified Contributor](https://docs.code4rena.com/roles/certified-contributors) (successfully complete KYC)
-2. Have a wallet that supports payout via Arbitrum.
+2. Have an address that supports payout via Arbitrum.
 
 You do not have to become certified before submitting bugs. But you must successfully complete the certification process within 30 days of the audit end date in order to receive awards. This applies to all audit participants, including wardens, teams, judges, validators, and scouts.
 
