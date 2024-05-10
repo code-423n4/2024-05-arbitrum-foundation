@@ -119,7 +119,7 @@ Arbitrum BoLD is a new dispute protocol that enables permissionless validation b
 
 | Question                                | Answer                       |
 | --------------------------------------- | ---------------------------- |
-| ERC20 used by the protocol              |       None             |
+| ERC20 used by the protocol              |       Stake Token (Assumed standard behaviors)             |
 | Test coverage                           |   74.43% (946/1271 lines, see more details below)      |
 | ERC721 used  by the protocol            |            None              |
 | ERC777 used by the protocol             |           None                |
