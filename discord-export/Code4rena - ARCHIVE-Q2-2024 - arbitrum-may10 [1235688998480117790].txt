@@ -1,0 +1,1597 @@
+==============================================================
+Guild: Code4rena
+Channel: ARCHIVE-Q2-2024 / arbitrum-may10
+==============================================================
+
+[05/02/2024 21:22] knownfactc4_29311 (pinned)
+👋 Hello and welcome to the audit channel for the up to $300,000 in USDC Arbitrum BoLD audit!
+
+📆 Audit opens 05/10/2024 20:00 (20:00 UTC) and runs through 05/27/2024 20:00 (20:00 UTC) (17 days).
+
+Please give a warm welcome to the Arbitrum team, particularly @gzeon, @yahgwai, @godzillaba, and @rauljordan who will be available for questions either here in the channel or via a PRIVATE thread in the EST and Asia timezones. 
+
+We'll be posting relevant links, documentation, etc. here, so if you intend to participate in this audit, consider enabling notifications for this channel. 🐺 ⏰
+
+Audit Page: https://code4rena.com/audits/2024-05-arbitrum-bold
+
+Certification will be required to receive payout on this audit. Instructions for certification can be found here: https://docs.code4rena.com/roles/certified-contributors
+
+This audit will payout via the Arbitrum network. Please ensure your listed payment address is compatible.
+
+{Reactions}
+👀 (21) 💪 (8) 👏 (6) 👋 (8) 
+
+[05/02/2024 21:28] jovi6132
+:chefskiss:
+
+
+[05/02/2024 21:28] knownfactc4_29311
+Pinned a message.
+
+
+[05/03/2024 06:04] bytes032
+https://github.com/OffchainLabs/nitro-contracts/pull/169/ 👀
+
+{Reactions}
+👀 (10) eyeses (11) 
+
+[05/10/2024 12:48] itsmetechjay (pinned)
+**IMPORTANT NOTE:** Prior to receiving payment from this audit you MUST:
+1. Become a [Certified Contributor](https://docs.code4rena.com/roles/certified-contributors) (successfully complete KYC)
+2. Have an address that supports payout via Arbitrum.
+
+You do not have to become certified before submitting bugs. But you must successfully complete the certification process within 30 days of the award announcement in order to receive awards. This applies to all audit participants, including wardens, teams, judges, validators, and scouts.
+
+
+[05/10/2024 12:48] itsmetechjay
+Pinned a message.
+
+
+[05/10/2024 17:11] shanb1605
+any walkthrough will be available?
+
+
+[05/10/2024 17:24] leeederek
+Hey! What kind of walkthrough are you thinking about?
+
+
+[05/10/2024 17:25] shanb1605
+I mean code and protocol walkthrough
+
+
+[05/10/2024 20:02] C4 (pinned)
+**Automated Findings / Publicly Known Issues**
+
+Reminder: all [Automated Findings / Publicly Known Issues](https://github.com/code-423n4/2024-05-arbitrum-foundation/blob/main/README.md#automated-findings--publicly-known-issues) are out of scope and ineligible for awards.
+
+{Embed}
+https://github.com/code-423n4/2024-05-arbitrum-foundation/blob/main/README.md
+2024-05-arbitrum-foundation/README.md at main · code-423n4/2024-05-...
+Contribute to code-423n4/2024-05-arbitrum-foundation development by creating an account on GitHub.
+Code4rena - ARCHIVE-Q2-2024 - arbitrum-may10 [1235688998480117790].txt_Files/8c37f925-99df-45a7-8894-d6084c99ccee-3C660
+
+
+[05/10/2024 20:02] thebrittfactor
+Pinned a message.
+
+
+[05/10/2024 20:06] haxatron1
+Dispute Game Resolution is also OOS for this one? :
+
+{Reactions}
+👀 (2) 
+
+[05/10/2024 20:36] gzeon
+Not sure what you meant by “also” but why would an audit of dispute protocol not cover its resolution haha
+
+It’s in scope.
+
+
+[05/10/2024 20:37] haxatron1
+- The resolution of challenges that do not involve honest claims are out of scope unless they lead to incorrect assertions being confirmed
+
+I havent looked into detail yet
+
+
+[05/10/2024 20:38] gzeon
+That exclusion is specific to challenge without an honest party participating
+
+
+[05/10/2024 20:41] gzeon
+Having an honest participant is the assumption for an Optimistic protocol to work
+
+{Reactions}
+👍🏼 
+
+[05/10/2024 20:55] haxatron1
+There was a recent contest of another dispute protocol that had its resolutions out of scope.
+
+{Reactions}
+😂 (3) 
+
+[05/10/2024 20:55] haxatron1
+It turned out to be quite messy in the end 😂
+
+{Reactions}
+💯 
+
+[05/10/2024 21:02] pascal9476
+Repo compiled and all tests passed successfully without any hassle 
+Thank you sponsors ☺️
+
+
+[05/10/2024 21:19] irving6969
+@Docs Wolf yo how does bold work?
+
+
+[05/10/2024 21:19] irving6969
+i think docs wolf is not working
+
+
+[05/10/2024 21:21] knownfactc4_29311
+It is currently being set up. A thread will be made when its prepared.
+
+{Reactions}
+🫡 
+
+[05/10/2024 21:31] dontonka
+OOOO so it's only the Solidity part that is in scope not all the `golang code` that was audited by ToB? dang.
+
+
+[05/10/2024 21:31] dontonka
+What if i would spot something in the `golang code base` ?
+
+
+[05/10/2024 21:54] gzeon
+correct
+
+
+[05/10/2024 21:54] iwildsniperi
+any one getting those whyle compiling?
+
+{Attachments}
+Code4rena - ARCHIVE-Q2-2024 - arbitrum-may10 [1235688998480117790].txt_Files/image-C2B42.png
+
+
+[05/10/2024 21:56] gzeon
+those are OOS from this contest but you can still report to us while we cannot guarantee payout
+
+{Reactions}
+👍 
+
+[05/10/2024 21:57] gzeon
+did you yarn install
+
+
+[05/10/2024 21:57] knownfactc4_29311
+Started a thread.
+
+
+[05/10/2024 22:07] dontonka
+> we cannot guarantee payout
+understood, that open the door for compensation. If a compensation would be made, would it be outside of the contest pot 🤔 ?
+
+
+[05/10/2024 22:07] gzeon
+yes, since those are OOS
+
+{Reactions}
+👍 
+
+[05/10/2024 22:25] iwildsniperi
+Started a thread.
+
+
+[05/10/2024 22:47] audinarey
+Copy all commands and run again
+
+It happened to me but it was Network timeout
+
+
+[05/10/2024 23:32] iwildsniperi
+Thx sir it was due to corrupted yarn
+Reinstalled yarn
+
+{Reactions}
+andbang 
+
+[05/10/2024 23:32] dontonka
+Started a thread.
+
+
+[05/11/2024 03:50] saint6704
+GOAT
+
+{Attachments}
+Code4rena - ARCHIVE-Q2-2024 - arbitrum-may10 [1235688998480117790].txt_Files/Screenshot_2024-05-11-09-18-48-288_com.dis-E6636.png
+
+{Reactions}
+🔥 (9) 🎊 💯 (2) 
+
+[05/11/2024 08:12] 0xnirlin
+:kekclap:
+
+
+[05/11/2024 08:58] _3doc_
+> “🧳Sponsors”: the greatest of all tags
+
+That’s undeniable 🥸
+
+{Reactions}
+4739_Skeletor (6) 
+
+[05/11/2024 14:26] no.one7777
+i have the same issue. did you find out how to do it
+
+
+[05/11/2024 14:30] iwildsniperi
+https://discord.com/channels/810916927919620096/1238610832439640074/1238623751382241360
+
+
+[05/11/2024 14:31] no.one7777
+yes but i use forge
+
+
+[05/11/2024 14:43] uaarrr
+you have to use  ``yarn``, forge install is useless because all the libs are in node_modules
+
+
+[05/11/2024 14:44] no.one7777
+i am on Windows i think yarn doesnt work for me
+
+
+[05/11/2024 14:45] uaarrr
+use  wsl
+
+
+[05/11/2024 14:45] no.one7777
+i use it
+
+
+[05/11/2024 14:45] iwildsniperi
+Then use its terminal
+
+
+[05/11/2024 14:45] no.one7777
+WSL:Ubuntu
+
+
+[05/11/2024 14:45] uaarrr
+so you use linux in this case, install the yarn on the linux
+
+
+[05/11/2024 14:45] uaarrr
+and then execute the ``yarn``  command in the repo
+
+
+[05/11/2024 14:46] no.one7777
+i use linux on windows
+
+
+[05/11/2024 14:46] no.one7777
+how to install yarn
+
+
+[05/11/2024 14:46] uaarrr
+if you cant research this common thing how do you expect to research smart contracts vulnerabilities ?? ...
+
+
+[05/11/2024 14:47] no.one7777
+i can handle it tnx
+
+
+[05/11/2024 14:51] loserdavictor
+`npm i -g yarn` # btw there are other ways to install it too, using pkg manager/ curl and whatnot
+
+
+[05/11/2024 14:52] loserdavictor
+-g stands for global flag iirc
+
+
+[05/11/2024 14:53] no.one7777
+i did it tnx
+
+
+[05/11/2024 15:33] carlitox477
+Is there any diagram that shows how BoLD works and how it affects current arbitrum architecture?
+
+
+[05/11/2024 15:35] pascal9476
+@gzeon @yahgwai @godzillaba @rauljordan  are all these codes newly written or some were taken from the current active roll up system 
+If yes which ones or which folders were newly written
+
+
+[05/11/2024 15:37] pascal9476
+Or anybody who is certain can answer
+
+
+[05/11/2024 15:44] .bugzyvonbuggernaut
+here's an early stage prototype of a code mapping tool for y'all -> https://solmaps.github.io/2024-05-arbitrum-foundation/. It's still incomplete e.g. couldn't parse half of the osp files + more, but hopefully it can help a bit to digest the complexity.
+
+{Reactions}
+🥲 
+
+[05/11/2024 17:12] shibi_kishore101
+@Docs Wolf where will the rollupProxy is deployed in L1 or L2
+
+
+[05/11/2024 17:21] _3doc_
+It works in a private thread 👀
+
+
+[05/11/2024 18:15] godzillaba (pinned)
+Some contracts are not new but are modified, eg RollupCore. You can check against https://github.com/OffchainLabs/nitro-contracts
+
+{Embed}
+https://github.com/OffchainLabs/nitro-contracts
+GitHub - OffchainLabs/nitro-contracts: The core Arbitrum Nitro cont...
+The core Arbitrum Nitro contracts deployed to the base chain to host the rollup - OffchainLabs/nitro-contracts
+Code4rena - ARCHIVE-Q2-2024 - arbitrum-may10 [1235688998480117790].txt_Files/nitro-contracts-EADB2
+
+{Reactions}
+👍🏻 (4) 
+
+[05/11/2024 19:18] kartoonjoy (pinned)
+Hi Wardens, The [analyzer report](https://github.com/code-423n4/2024-05-arbitrum-foundation/blob/main/README.md#automated-findings--publicly-known-issues) has been added to the repo. Thanks for your patience!
+
+{Embed}
+https://github.com/code-423n4/2024-05-arbitrum-foundation/blob/main/README.md
+2024-05-arbitrum-foundation/README.md at main · code-423n4/2024-05-...
+Contribute to code-423n4/2024-05-arbitrum-foundation development by creating an account on GitHub.
+Code4rena - ARCHIVE-Q2-2024 - arbitrum-may10 [1235688998480117790].txt_Files/8c37f925-99df-45a7-8894-d6084c99ccee-3C660
+
+{Reactions}
+✅ (5) thankyou (4) 👌 
+
+[05/11/2024 19:19] kartoonjoy
+Pinned a message.
+
+
+[05/11/2024 19:19] kartoonjoy
+Pinned a message.
+
+
+[05/12/2024 05:20] dinesh11g
+BOLDUpgradeAction is an upgraded from which solidity file ? can anyone name it ?
+
+
+[05/12/2024 09:56] gzeon
+Started a thread.
+
+
+[05/12/2024 13:17] 0xspearmint
+Where can I see the implementation of the AssertionChain contract?
+
+
+[05/12/2024 17:10] pascal9476
+Only one having a hard time here?💀
+
+
+[05/12/2024 17:29] pascal9476
+What are edges please
+
+
+[05/12/2024 17:30] godzillaba
+`IAssertionChain` is implemented by `RollupCore`
+
+
+[05/12/2024 17:34] godzillaba
+https://docs.arbitrum.io/how-arbitrum-works/bold/gentle-introduction#how-is-this-possible
+
+> ... edges are simply a portion of a claim made by a validator about the history of the chain from some end state all the way back to some initial state.
+
+{Reactions}
+☝️ 
+
+[05/12/2024 19:07] iwildsniperi
+hello sir, arbitrum docs "intro to bold" is one of the greatest
+highly recommended
+
+{Reactions}
+💯 (3) 
+
+[05/12/2024 23:39] gzeon (pinned)
+wardens, if you have question that are not specific to the scope of this contest (i.e. BOLD) but more about how Arbitrum works, you can also ask in https://discord.com/channels/585084330037084172/859511259183448084 in https://discord.gg/arbitrum where we have other engineer that might be able to help
+
+
+[05/13/2024 00:06] 0x73696d616f
+some inherited contracts are OOS, but the top level contracts are not
+this is the case for AdminFallbackProxy, as RollupProxy is in scope
+is this intended?
+
+
+[05/13/2024 04:21] j4x_98
+I can't access the shared link. Does it require some additional role?
+
+
+[05/13/2024 04:58] gzeon
+you have to join the Arbitrum Discord
+https://discord.gg/arbitrum
+
+
+[05/13/2024 07:03] j4x_98
+Thx 🙂
+
+
+[05/13/2024 07:10] ch_301
+Where I can find `IEdgeChallengeManager.sol`?
+
+
+[05/13/2024 08:40] umar_23269
+can anyone explain bisection of a node as in BOLD whitepaper
+
+
+[05/13/2024 08:53] .satyam_
+this could help,
+ Imagine you're playing a game where you have two boxes, one with a red ball and the other with a blue ball. You don't know which box contains which color, but you have a friend who can guess correctly. Your friend proposes a bisection: they'll guess the color of the ball in the middle box. If they're right, they win; if wrong, they lose. But here's the twist: they can ask you to split the middle box into two smaller boxes, and they'll guess the color of the ball in one of those smaller boxes. This process continues until they guess the color correctly. In BOLD, bisections are similar: disputes are narrowed down by splitting the claimed states into smaller, more manageable parts until the correct state is identified.
+
+{Reactions}
+👍 (5) 
+
+[05/13/2024 09:16] no.one7777
+/src/challengeV2/EdgeChallengeManager.sol
+
+{Reactions}
+👍 
+
+[05/13/2024 15:49] gzeon (pinned)
+As a reminder, please tag all @gzeon @yahgwai @godzillaba @rauljordan when creating a private thread, I am not online 24/7 haha
+
+{Reactions}
+hi5 (9) 
+
+[05/13/2024 16:17] kartoonjoy
+Pinned a message.
+
+
+[05/13/2024 16:18] kartoonjoy
+Pinned a message.
+
+
+[05/13/2024 21:01] eme0242
+Please, what does a leaf in the assertionState represent or signify?
+
+
+[05/14/2024 02:56] j4x_98
+Hey @KnownFact | C4 , as this is a scaled pot, will the hunter/gatherer rewards also be scaled accordingly?
+
+
+[05/14/2024 03:18] umar_23269
+strating from L1 last state to possible last state of L1 are leaf of a merkle tree .so it`s  root is a assertion about L1 state
+
+
+[05/14/2024 12:25] borongod
+Should we assume `OneStepProver` would always return correct value?👀
+
+
+[05/14/2024 14:13] godzillaba
+if given correct inputs, yes
+
+
+[05/14/2024 15:24] knownfactc4_29311
+In cases where there are no Highs or Mediums found in a scaled pot, there isn't any hunter/gather rewards. Otherwise the hunter/gather reward is scaled based on the resultant pot.
+
+
+[05/14/2024 15:36] sajeevan_58356
+can someone explain me about , in the ChallengeEdge contract, what it's mean to be Small Step and Big Step
+
+
+[05/14/2024 16:27] sathish9098kumar
+One of the toughest code to understand it's implementation. There are so many things confuse us😁.  even after fully understood the docs
+
+
+[05/14/2024 16:35] .satyam_
+agree
+
+{Reactions}
+👍 (4) 
+
+[05/14/2024 16:46] sajeevan_58356
+I agree with you too
+
+{Reactions}
+👍 (3) 
+
+[05/14/2024 17:17] iwildsniperi
+Guys
+Dont hesitate keeping diving
+I think arbitrum will do another round on others....
+And have bug bounty too
+
+
+[05/14/2024 17:17] iwildsniperi
+So just put the time and will get rewarded
+
+
+[05/14/2024 17:38] sajeevan_58356
+we only meant that codebase is tough to understand, that doesn't mean we are going to give up🫡 , Thank you for your regards btw
+
+{Reactions}
+hi5 
+
+[05/14/2024 17:44] haxatron1
+This is 10× more complex than the Optimism fraud proofs 🫠
+
+{Reactions}
+👍 (6) 
+
+[05/14/2024 18:55] raulj
+hey @sajeevan_58356 we have a technical deep dive here that explains what the different steps mean 🙂 https://github.com/OffchainLabs/bold/blob/main/docs/research-specs/TechnicalDeepDive.pdf
+
+{Embed}
+https://github.com/OffchainLabs/bold/blob/main/docs/research-specs/TechnicalDeepDive.pdf
+bold/docs/research-specs/TechnicalDeepDive.pdf at main · OffchainLa...
+Efficient, all-vs-all dispute protocol for Optimistic Rollups - OffchainLabs/bold
+Code4rena - ARCHIVE-Q2-2024 - arbitrum-may10 [1235688998480117790].txt_Files/bold-F64D5
+
+
+[05/14/2024 18:55] raulj
+I think it should also answer a lot of related questions here
+
+{Reactions}
+👍 (2) 
+
+[05/14/2024 18:59] sathish9098kumar
+Is there any problem in pdf file. When try to download showed like invalid format @rauljordan
+
+
+[05/14/2024 19:01] godzillaba
+i'd try a different reader, seems fine on my end
+
+{Reactions}
+👍 (2) 
+
+[05/14/2024 19:02] sathish9098kumar
+Okay I will try some other reader
+
+
+[05/14/2024 19:02] forgebyola
+Hm you mean *fault proofs?
+
+
+[05/14/2024 19:04] raulj
+Speaking of the complexity: we understand it can be overwhelming. However, it's really, really difficult to create a dispute game that can successfully defend against an attacker trying to confirm an invalid claim. A hard part is being able to defend against thousands or tens of thousands of attacks at the same time, and that's what BOLD allows Arbitrum to do
+
+{Reactions}
+💯 (7) 💜 (3) 
+
+[05/14/2024 19:04] raulj
+Alternative dispute games ignore this, or take on very negative tradeoffs such as having to fight 1v1 disputes against each attacker
+
+
+[05/14/2024 19:05] raulj
+We're planning on doing a code walkthrough to help folks here navigate the different contracts and understand how it all fits together
+
+{Reactions}
+👍 (10) 💯 (4) eyeses (4) 
+
+[05/14/2024 19:05] raulj
+let us know if you have any questions about the deep dive - hopefully it clarifies some stuff 🙂
+
+{Reactions}
+👍 (7) 
+
+[05/14/2024 19:05] forgebyola
+Thank you. That'll be great
+
+
+[05/14/2024 19:57] mansa11
+He’s correct.”Fraud proofs”
+
+
+[05/14/2024 21:23] kartoonjoy (pinned)
+Welcome sponsor team member @hkalodner!
+
+{Reactions}
+👋 (3) 
+
+[05/14/2024 21:23] kartoonjoy
+Pinned a message.
+
+
+[05/14/2024 21:28] monkeyjd.
+@derek could you please answer me something about the awards competition, lows vulnerabilities are in the scope?
+
+
+[05/14/2024 21:30] leeederek
+Yes they are in scope. Note that low risk and governance/centralization risk issues are categorized under "QA" as defined in Code4rena's formal judging criteria: https://docs.code4rena.com/awarding/judging-criteria#qa-reports-low-risk-and-governance-centralization-risk. They are allotted a fixed $40,000 pool as per: https://code4rena.com/audits/2024-05-arbitrum-bold
+
+
+[05/14/2024 21:31] monkeyjd.
+thanks for answering
+
+
+[05/15/2024 03:20] bronze_pickaxe
+This would be great 🙌
+
+
+[05/15/2024 04:29] umar_23269
+Started a thread.
+
+
+[05/15/2024 04:39] 0xspearmint
+@rauljordan please check my private thread, thank you.
+
+
+[05/15/2024 14:26] jolah1
+Thank you.
+
+
+[05/15/2024 14:44] m_rassska
+tbh, BoLD's wp drives me crazy 😄
+
+{Reactions}
+🥹 
+
+[05/15/2024 14:47] godzillaba (pinned)
+it's tough, but hopefully this glossary may help with the whitepaper: https://arbitrum.notion.site/BoLD-Paper-vs-BoLD-Contracts-5ddade25099e479e8a5d91efc71ca70f
+
+{Reactions}
+🚀 💜 (2) 
+
+[05/15/2024 15:45] auditsea
+the terms `layerzero_blockedge_height` , bigstep height, and smallstep height represent number of leaves right?
+
+
+[05/15/2024 15:56] dontonka
+Bold is deployed on `testnet` , can you guys provide where are the L2s (could be seen using https://bold-explorer.arbitrum.io ?) and L1 (could be seen https://sepolia.etherscan.io ?) contracts are deployed.
+
+
+[05/15/2024 16:07] kartoonjoy
+Pinned a message.
+
+
+[05/15/2024 16:08] godzillaba
+it's the number of "steps" claimed by a layer zero edge, so if you were to fully bisect that layer zero edge into the entire tree, it would be the number of leaves yes
+
+
+[05/15/2024 16:10] godzillaba
+https://github.com/OffchainLabs/bold-validator-starter-kit/blob/c9e8a89a6d28faf36c59025c0c57e9ab988baec4/honest-validator/l2_chain_info.json#L39-L49
+^ the l1 sepolia contracts are here
+
+also see https://github.com/OffchainLabs/bold-validator-starter-kit?tab=readme-ov-file#links
+
+{Reactions}
+✅ 
+
+[05/15/2024 16:15] auditsea
+Isn't it the number N(l) that means the number of state commitments on the level l? In other words regarding Arbitrum, wouldn't it be like number of blocks to be verified?
+
+
+[05/15/2024 16:19] borongod
+> The number of steps of execution at which validators could disagree within a single Arbitrum block has a max of 2^43
+
+
+[05/15/2024 16:19] borongod
+I'd like to know how this value was calculated👀
+
+
+[05/15/2024 16:37] dontonka
+Started a thread.
+
+
+[05/15/2024 19:04] godzillaba
+for a block level edge, yeah LAYERZERO_BLOCKEDGE_HEIGHT is like the number of l2 blocks that the edge is claiming
+
+{Reactions}
+👍 
+
+[05/16/2024 03:03] umar_23269
+Started a thread.
+
+
+[05/16/2024 14:00] borongod
+Are validators forced to use `validatorwallet`?
+
+
+[05/16/2024 14:00] godzillaba
+no
+
+{Reactions}
+👍 
+
+[05/16/2024 16:03] 0xtotem
+🤝 the [whitepaper](https://arxiv.org/pdf/2404.10491) was added to the @Docs Wolf 
+try it in a public or private thread :ohyeah:
+
+{Reactions}
+hi5 (7) 
+
+[05/16/2024 17:00] 0xshaheen
+Started a thread.
+
+
+[05/16/2024 17:27] dontonka
+ECM::challengePeriodBlocks , that is in terms of L2 blocks, which are 4 per second, is that accurate? Or it's L1 blocks?
+
+
+[05/16/2024 17:47] godzillaba
+it is l1 blocks
+
+{Reactions}
+✅ 
+
+[05/16/2024 18:16] sajeevan_58356
+can someone explain what `AssertionChain` means in simple terms (briefly)?
+
+
+[05/16/2024 18:17] _3doc_
+Yes @Docs Wolf can if you ask in a private thread 👀
+
+
+[05/16/2024 18:17] sajeevan_58356
+thank you
+
+
+[05/16/2024 20:44] raulj
+hi @sajeevan_58356 : It's a contract that stores a linked list of claims about executing the Arbitrum inbox. Something like:
+
+After executing 10 inbox messages from the inbox on Ethereum, the Arbitrum L2 block hash is 0xabc...then after executing 11 inbox messages, the Arbitrum L2 block hash is 0xdef
+
+{Reactions}
+👍 (2) 
+
+[05/16/2024 20:45] raulj
+These claims are called assertions and can be challenged by others via BOLD
+
+
+[05/17/2024 11:53] thisvishalsingh
+I see lot of silence!
+
+
+[05/17/2024 12:15] raulj
+lots of private threads! but feel free to also ask questions here if desired
+
+{Reactions}
+🫡 (5) 
+
+[05/17/2024 16:42] raulj (pinned)
+Hi all, here is a code walkthrough and explainer of how BOLD works to hopefully aid as an additional resource https://drive.google.com/file/d/1gDnFjQQTOdqWgVXFhHzcPdCVrgMzy0Ma/view?usp=drive_link
+
+{Embed}
+https://drive.google.com/file/d/1gDnFjQQTOdqWgVXFhHzcPdCVrgMzy0Ma/view?usp=drive_link
+BOLDCodeWalkthrough.mov
+
+{Reactions}
+🫡 (9) 🔥 (12) thankyou (6) hi5 (4) 💙 (4) 🧡 (3) 
+
+[05/17/2024 16:42] raulj
+😀
+
+
+[05/17/2024 16:49] thebrittfactor
+Pinned a message.
+
+
+[05/17/2024 17:11] kapitankalbasa
+@kartoonjoy | C4🎇🎇 .
+
+
+[05/17/2024 17:12] kartoonjoy
+Is there a request?
+
+
+[05/17/2024 17:12] kapitankalbasa
+you send me an email asking me to ping you
+
+
+[05/17/2024 17:14] kartoonjoy
+Lets come out of this channel, please
+
+
+[05/17/2024 17:19] leeederek
+Started a thread.
+
+
+[05/18/2024 05:44] 0xido (pinned)
+Thank you Raul for creating this invaluable resource!
+We uploaded it to the Arbitrum Youtube channel -  here's the link (usually works better than the google drive player):
+https://www.youtube.com/watch?v=tXxZS0r5WP8
+
+{Embed}
+Offchain Labs
+https://www.youtube.com/watch?v=tXxZS0r5WP8
+BOLD Smart Contracts Walkthrough
+Our Senior Software Engineer Raul Jordan gives a walkthrough of the code behind BOLD smart contracts 
+
+Brought to you by Offchain Labs, the team behind Arbitrum, a leading scaling solution for Ethereum. 
+
+To learn more, visit: https://linktr.ee/offchainlabs
+
+
+#Offchainlabs #Arbitrum #Ethereum
+Code4rena - ARCHIVE-Q2-2024 - arbitrum-may10 [1235688998480117790].txt_Files/maxresdefault-F3C35.jpg
+
+{Reactions}
+👍 (7) 💜 (5) 
+
+[05/18/2024 08:32] irving6969
+roll up contracts is gonna deployed on L1 ??
+
+{Reactions}
+c4todo (4) 
+
+[05/18/2024 08:56] zzebra83
+auditing aside, the design of BOLD is so elegant.
+
+{Reactions}
+chefskiss (6) 🔥 (4) 10_10 (3) 🚀 (3) hearteyesshark (2) this (2) hi5 (2) hearteyesrobot (2) 👏 (2) bolt_discord_emoji (2) 
+
+[05/18/2024 15:48] no.one7777
+what EIP it use
+
+
+[05/19/2024 00:15] tamayonft
+the RollupUserLogic has a function call _chainIdChanged() to check if a the blockchain.id has change i guess, how this can be changed?
+
+
+[05/19/2024 02:28] 0x73696d616f
+When a fork happens chainId changes
+
+
+[05/19/2024 02:34] tamayonft
+That s just for arbitrum chain?
+
+
+[05/19/2024 03:06] ladboy233
+emm, which contract is an entry point to start?
+
+
+[05/19/2024 03:24] 0xshaheen
+RollupUserLogic to start Assertions and EdgeChallengeManager to make challenges.
+Watch this walkthrough video ser https://discord.com/channels/810916927919620096/1235688998480117790/1241265116238975076
+
+
+[05/19/2024 04:10] haxatron1
+Looks like we are in the same boat of starting in the last week :hi5:
+
+
+[05/19/2024 09:14] haxatron1
+@rauljordan is there a link to the slides?
+
+{Reactions}
+👆 (2) 
+
+[05/19/2024 11:49] kartoonjoy
+Pinned a message.
+
+
+[05/19/2024 12:08] ladboy233
+Thank you!
+
+{Reactions}
+🫡 
+
+[05/19/2024 12:08] ladboy233
+👍
+
+
+[05/19/2024 12:12] forgebyola
+Would like to know too?
+
+
+[05/19/2024 14:18] tamayonft
+Where the sequencer will be deployed, etherium rigth?
+
+
+[05/19/2024 14:32] tamayonft
+In the force Inclusión function there is a sender input, this will be the sender that will be showed in the l2 when the a function is called trough the forceInclusion function?
+
+
+[05/19/2024 23:51] godzillaba
+deleted
+
+
+[05/20/2024 00:07] godzillaba
+i originally misread your question as "where will contracts be deployed". the sequencer will post batches of user transactions to ethereum
+
+
+[05/20/2024 01:40] tamayonft
+But the sequencer is deployed in etherium?
+
+
+[05/20/2024 01:41] tamayonft
+I was talking about the sequencer contract sorry
+
+
+[05/20/2024 11:25] godzillaba
+oh then yes that'll be on ethereum
+
+
+[05/20/2024 11:37] eme0242
+please check pt
+
+{Reactions}
+👀 
+
+[05/20/2024 11:39] tamayonft
+And it will be work work layer 3 on arbitrum as well that want a implement the bold mechanism
+
+
+[05/20/2024 11:40] godzillaba
+yeah that's right
+
+
+[05/20/2024 13:17] raulj
+slides here @haxatron https://docs.google.com/presentation/d/1ympWsyP5REhgWkSe367GjkpN8pMfnwt9DVXILiJCwYk/edit?usp=sharing
+
+{Embed}
+https://docs.google.com/presentation/d/1ympWsyP5REhgWkSe367GjkpN8pMfnwt9DVXILiJCwYk/edit?usp=sharing
+Code4rena Walkthrough BOLD
+Walkthrough of BOLD Smart Contracts Raul Jordan Staff Software Eng. Offchain Labs
+Code4rena - ARCHIVE-Q2-2024 - arbitrum-may10 [1235688998480117790].txt_Files/AHkbwyK8lHCJe_lZUXE5z0BPlpEBpam2Jv-DwGjGMp-13016
+
+{Reactions}
+🫡 (2) 
+
+[05/20/2024 15:20] thatunemployedfren
+what happens if someone who isn't currently certified submits issues in this contest? does his payment stays on hold till he becomes certified?can he claim it later?
+
+
+[05/20/2024 15:52] dontonka
+all earning are transfered to me automatically 😛 .
+
+{Reactions}
+🥲 
+
+[05/20/2024 15:54] dontonka
+on a more serios note, in the past I've seen this, i think once the contest is completed (not sure if after judging or right after contest ends), C4 allow you like a `grace period` of X days in order to certify, and if you don't get certified in time, you would loose your award. I'm not sure if this has evolved.
+
+
+[05/20/2024 15:56] dontonka
+@kartoonjoy | C4🎇🎇 should know once he is back online
+
+
+[05/20/2024 15:58] kartoonjoy
+There is only like a 60 day deadline to get certified once the audit ends. If you still aren't certified as of the established deadline, you'll forfeit funds.
+
+
+[05/20/2024 15:58] ivi4yh3ivi
+30 days after audit end date according to this message: https://discord.com/channels/810916927919620096/1235688998480117790/1238472740638425178
+
+{Reactions}
+thankyou 
+
+[05/20/2024 16:01] kartoonjoy
+Thanks for the correction.
+
+{Reactions}
+🫡 
+
+[05/20/2024 16:04] theschnilch
+There is a comment in the AssertionNode struct that says that an owner can destroy pending assertions. How can the owner do that?
+
+
+[05/20/2024 16:05] thatunemployedfren
+understood! Thanks a lot for the clarification @dontonka @kartoonjoy | C4🎇🎇 @mayhem 🫡
+
+{Reactions}
+👍 hi5 
+
+[05/20/2024 19:58] snake_eaterr148
+What is "getting certified"?
+
+
+[05/20/2024 20:08] thebrittfactor
+You may review our certification process [here](https://docs.code4rena.com/roles/certified-contributors) 🙂
+
+{Embed}
+https://docs.code4rena.com/roles/certified-contributors
+Certified contributors | Code4rena
+In order to create opportunities for contributions which rely on establishment of trust, Code4rena allows community members to opt into certifying their identity and entering into a simple agreement.
+
+
+[05/21/2024 02:52] tamayonft
+Are the upgrade executor the same as BOLDUpgradeAction?
+
+
+[05/21/2024 08:17] zzebra83
+what  do u mean? if you mean they are the same entity,  then no they are seperate.
+
+
+[05/21/2024 09:39] yahgwai
+No, the action contract is delegatecalled to by the upgrade executor. You can find more general information about the action contracts framwork here: https://github.com/ArbitrumFoundation/governance/blob/main/src/gov-action-contracts/README.md
+
+{Embed}
+https://github.com/ArbitrumFoundation/governance/blob/main/src/gov-action-contracts/README.md
+governance/src/gov-action-contracts/README.md at main · ArbitrumFou...
+Contribute to ArbitrumFoundation/governance development by creating an account on GitHub.
+Code4rena - ARCHIVE-Q2-2024 - arbitrum-may10 [1235688998480117790].txt_Files/governance-4DF19
+
+
+[05/21/2024 11:04] tamayonft
+Thanks so much
+
+
+[05/21/2024 19:20] ladboy233
+https://docs.arbitrum.io/how-arbitrum-works/bold/gentle-introduction#what-exactly-is-bold
+
+{Embed}
+https://docs.arbitrum.io/how-arbitrum-works/bold/gentle-introduction
+Gentle Introduction
+Arbitrum Docs
+Code4rena - ARCHIVE-Q2-2024 - arbitrum-may10 [1235688998480117790].txt_Files/devdocs-43F7E.png
+
+
+[05/21/2024 19:20] ladboy233
+> Confirm valid claims - either by timing other validators out or by winning a challenge
+
+
+[05/21/2024 19:20] ladboy233
+what does  timing other validators out mean?
+
+
+[05/21/2024 20:03] godzillaba
+the wording there is a little confusing, by time out it means accumulate time on honest edges
+
+
+[05/21/2024 21:23] 0xhacksmithh
+@godzillaba ser pls check PT whenever you have free time, thanks
+
+
+[05/22/2024 05:02] dinesh11g
+Guys from which contract `BOLDUpgradeAction.sol` was upgraded from ?
+
+
+[05/22/2024 05:23] zanderbyte
+its functionality is designed to upgrade contracts
+
+
+[05/22/2024 05:24] shanb1605
+@godzillaba what's use of `DelayBufferable` in SequencerInbox
+
+
+[05/22/2024 05:40] dinesh11g
+so it doesn't have any original contract before ?
+
+
+[05/22/2024 05:49] gzeon
+It is an action script to upgrade contract, it is supposed to be delegate called from the DAO L1 UpgradeExecutor which own the rollup; it does not have any original contract, it is not a upgrade of itself, it is a upgrade `ACTION` that contain the logic for the rollup owner to perfrom the upgrade
+
+
+[05/22/2024 05:54] dinesh11g
+fine, thanks mate
+
+
+[05/22/2024 08:39] ch_301
+Started a thread.
+
+
+[05/22/2024 09:12] joshuajee
+Which token is the stakedToken?
+
+
+[05/22/2024 09:14] gzeon
+it is assumed to be WETH or a token that is not fee-on-transfer, rebasing, have a transfer hook or otherwise have non-standard ERC20 logics.
+
+
+[05/22/2024 09:34] joshuajee
+Thanks
+
+
+[05/22/2024 09:35] joshuajee
+Is there an allowed list of tokens?
+
+
+[05/22/2024 12:56] gzeon
+There are no allowelist, the assumptions are clearly specified
+
+
+[05/22/2024 13:38] godzillaba
+it is a way of limiting repeated sequencer censorship of delayed inbox messages
+
+{Reactions}
+👍🏻 
+
+[05/23/2024 11:58] ladboy233
+if there are two party that make a assertion.
+
+
+[05/23/2024 11:58] ladboy233
+assume party A and party B make an assertion.
+
+
+[05/23/2024 11:58] ladboy233
+party A win.
+
+
+[05/23/2024 11:58] ladboy233
+does party A win the staking bond from party B?
+
+
+[05/23/2024 11:58] ladboy233
+no?
+
+{Reactions}
+👍🏻 (2) 
+
+[05/23/2024 12:34] ch_301
+No, party A win nothing. 
+the loser stakes is already sent to the loserStakeEscrow
+
+
+[05/23/2024 12:34] 0xshaheen
+No. they (party A) are just given their bond back. But lossing party (B) gets punished and they looss their bond. No incentives for winning (for now)
+
+
+[05/23/2024 12:35] ladboy233
+that make sense
+
+
+[05/23/2024 14:23] takarez
+
+
+{Attachments}
+Code4rena - ARCHIVE-Q2-2024 - arbitrum-may10 [1235688998480117790].txt_Files/Screenshot_2024-05-23-15-44-08-432_com.goo-1BD7F.jpg
+
+
+[05/23/2024 15:05] ladboy233
+this is helpful
+
+
+[05/23/2024 15:05] ladboy233
+thank you!
+
+
+[05/23/2024 15:43] 0xshaheen
+ser I believe this isn't true for now. The incentives model has not been implemented yet. Honest validators are only receiving their staked bond, with no additional incentives. Incentives may be given in the future, but they will not be related to this contest. Please, Arbitrum team, correct me if I'm wrong.
+
+{Reactions}
+👍 (2) 
+
+[05/23/2024 15:44] 0xshaheen
+Also, I'm not sure about the gas refunds, pls shed some light on it as well 🤔
+
+
+[05/23/2024 16:23] takarez
+You may be correct, was watching the video then remember seeing the question, and also the code implementation should say it all.
+
+{Reactions}
+👍 
+
+[05/23/2024 23:17] tamayonft
+Gas refund is there
+
+
+[05/24/2024 00:08] tamayonft
+In the force Inclusión function there is a sender input, this will be the sender that will be showed in the l2 when the a function is called trough the forceInclusion function?
+
+
+[05/24/2024 07:48] sathish9098kumar
+@gzeon please check PT, thanks
+
+
+[05/24/2024 14:05] godzillaba
+yes
+
+
+[05/25/2024 01:55] tamayonft
+xd
+
+
+[05/25/2024 02:05] ladboy233
+👍
+
+
+[05/25/2024 13:02] sathish9098kumar
+@rauljordan please check PT, thanks
+
+
+[05/25/2024 15:32] sathish9098kumar
+@godzillaba  please check PT, thanks
+
+
+[05/25/2024 20:07] ruan_53970
+How much is a payout for High risk
+
+
+[05/25/2024 21:06] tamayonft
+It depends on how many dups has, and the rest of the findings
+
+
+[05/25/2024 21:06] tamayonft
+Actually the test is in the rollup.t.sol
+
+
+[05/26/2024 00:26] __melonwater
+What's the actual numBigSteps, and its endHeight?
+
+{Reactions}
+Ⓜ️ (5) 🇪 (4) 🇷 (4) 🇨 (4) 🇾 (4) 🇵 (4) 🇱 (4) 🇸 (4) 🥲 
+
+[05/26/2024 03:28] __melonwater
+and the stake amount for each level? 👀
+
+
+[05/26/2024 04:36] zhuyingqiuhua
+Assertion bonds: 3600 ETH - required from validators to bond their funds to an assertion in the eventual hopes of having that assertion be confirmed by the rollup protocol. This is a one-time bond required to be able to start posting assertions. This bond can be withdrawn once a validator’s assertion is confirmed and can alternatively be put together via a trustless bonding pool.
+
+Challenge-bonds, per level: 555/79 ETH (UPDATED) - required from validators to open challenges against an assertion observed on Ethereum, for each level. Note that “level” corresponds to the level of granularity at which the interactive dissection game gets played over, starting at the block level, moving on to a range of WASM execution steps, and then finally to the level of a single step of execution. These values were carefully calculated to optimize for the resource ratio and gas costs in the event of an attack, as explained in Economics of Disputes in Arbitrum BOLD 19 and the BoLD whitepaper 9. This effectively means that an entity that has already put up a bond to propose an assertion does not need to put up a separate bond to challenge an invalid state assertion that they observe. These bonds can be refunded at the end of a challenge and can also alternatively be put together by the community using a trustless bonding pool.
+
+
+[05/26/2024 04:39] zhuyingqiuhua
+https://forum.arbitrum.foundation/t/aip-bold-permissionless-validation-for-arbitrum/23232 Arbitrum
+Improvement Proposal clarifies this. Correct me if I am wrong.
+
+{Embed}
+https://forum.arbitrum.foundation/t/aip-bold-permissionless-validation-for-arbitrum/23232
+AIP: BOLD - permissionless validation for Arbitrum
+Submitted by: The Arbitrum Foundation  Category: Constitutional, Software Upgrade  Abstract This Constitutional AIP proposes upgrading both Arbitrum One and Arbitrum Nova’s Rollup Contracts to use Arbitrum BOLD: a new dispute resolution protocol that is designed to replace the existing and currently deployed Arbitrum protocol. BOLD delivers two ...
+Code4rena - ARCHIVE-Q2-2024 - arbitrum-may10 [1235688998480117790].txt_Files/discourse-logo-sketch-small-1E4EC.png
+
+{Reactions}
+🔥 (2) 
+
+[05/26/2024 05:24] __melonwater
+🥹 3q
+
+
+[05/26/2024 06:06] olanre_waju
+https://tenor.com/view/leonardo-dicaprio-clapping-clap-applause-amazing-gif-16078907558888063471
+
+{Embed}
+https://tenor.com/view/leonardo-dicaprio-clapping-clap-applause-amazing-gif-16078907558888063471
+Code4rena - ARCHIVE-Q2-2024 - arbitrum-may10 [1235688998480117790].txt_Files/leonardo-dicaprio-clapping-B2EC3.png
+
+
+[05/26/2024 12:15] ladboy233
+Thank you, this is helpful
+
+
+[05/26/2024 19:55] tamayonft
+please check PT, thanks
+
+
+[05/27/2024 03:51] irving6969
+In which conditions , fast confirm assertion will be used? May i know that usage of fast confirm assertion?
+
+
+[05/27/2024 04:59] rodiontrubnikov
+I guess in the case if something terrible happens and the protocol needs to react asap
+
+{Reactions}
+👍 (2) 
+
+[05/27/2024 12:27] gzeon
+As noted in the code comment
+>     /**
+>      * @notice This allow the anyTrustFastConfirmer to force confirm any pending assertion
+>      *         the anyTrustFastConfirmer is supposed to be set only on an AnyTrust chain to
+>      *         a contract that can call this function when received sufficient signatures
+>      */
+>     function fastConfirmAssertion(
+AnyTrust trust model allows fast confirmation when the committee unanimously agree to a certain state, fast confirmation is designed to be used by AnyTrust chains with a contract (e.g. multisig) controlled by the DAC
+
+
+[05/27/2024 19:55] ladboy233
+I see winnie here, I am sure the total reward pot will be 300K I guess.
+
+{Reactions}
+🥹 (3) 
+
+[05/27/2024 19:56] ladboy233
+yeah 3600 ETH is a lot of fund, but certain incorrect assertion confirmed will be so bad, that is reasonable.
+
+
+[05/27/2024 19:56] irving6969
+Ggwp everyone this one was fun
+
+
+[05/27/2024 19:57] gumgumzum
+This is how it felt for me
+
+
+[05/27/2024 19:58] gumgumzum
+https://tenor.com/view/mickey-mouse-black-white-classic-cartoon-doors-mickey-opens-doors-gif-24881390
+
+{Embed}
+https://tenor.com/view/mickey-mouse-black-white-classic-cartoon-doors-mickey-opens-doors-gif-24881390
+Code4rena - ARCHIVE-Q2-2024 - arbitrum-may10 [1235688998480117790].txt_Files/mickey-mouse-black-white-FE319.png
+
+{Reactions}
+😂 (10) 
+
+[05/27/2024 20:02] C4
+**🚨 AUDIT ALERT**
+
+@🐺Wardens The **Arbitrum BoLD **audit is now closed! Huge thanks to everyone who participated 🔍, whether you submitted a finding or not.
+
+What's next: The sponsor team and judge will review the findings over the next couple of weeks. Feel free to ping a Civics-Admin if you have questions along the way!
+
+
+[05/27/2024 20:08] gzeon
+Thanks everyone for participating!
+
+{Reactions}
+🫡 (13) 
+
+[05/27/2024 20:10] minh___
+so that means 150k for the rest 🫠
+
+{Reactions}
+👍 💯 😱 
+
+[05/27/2024 20:26] sp1cymeatball
+It's out
+
+
+[05/27/2024 20:26] ladboy233
+better than 80K for all haha.
+
+{Reactions}
+😄 (5) 
+
+[05/27/2024 20:30] sp1cymeatball
+363 + 15
+
+
+[05/27/2024 22:25] dontonka
+gj @SpicyMeatball , checked your reports 👏 .
+
+{Reactions}
+🔥 hi5 
+
+[05/27/2024 22:26] dontonka
+@CloudEllie question on this one. Since there is a 40k pot for QA report, the rules that only the 3 best report will split this is still valid (it's a unusual high amount)? Assuming at least a Med or a High is found (which will be the case clearly)
+
+
+[05/27/2024 22:49] eme0242
+They are as spicy as meatballs
+
+{Reactions}
+🔥 (3) 
+
+[05/28/2024 01:03] tamayonft
+How many submissions?
+
+
+[05/28/2024 01:04] tamayonft
+Amazing contest not doubt  that one of the contest where I learned the most.  Thanks for the sponsors
+
+{Reactions}
+🔥 (10) 
+
+[05/28/2024 01:05] tamayonft
+Best of luck
+
+
+[05/28/2024 04:16] dinesh11g
+Yooo
+
+
+[05/29/2024 21:11] daviddennis.
+@kartoonjoy | C4🎇🎇 Hey, just checking, now that the contest is closed, when do the results and prizes get publicly announced?
+
+
+[05/29/2024 21:18] daviddennis.
+@kartoonjoy | C4🎇🎇 Also, I noticed that we had 109 participants.  Do you know how that compares to others?
+
+
+[05/30/2024 01:01] dontonka
+I think for the prize pool size participation was not that elevated, but the code base was also intimidating and many might have started and didn't make it to the end 😅 . Also since the code look solid and from a reputable team.
+
+{Reactions}
+👆 (5) 💯 (2) 
+
+[05/30/2024 08:21] aslanas01
+I worked the thick knot. It's been a long time, I don't know what to do, I'm sorry. Can you guide me?
+
+
+[06/02/2024 22:52] forgebyola
+brilliant find
+
+
+[06/04/2024 23:07] dontonka
+The tool that classify QA report needs some love 😅 . My QA report was classified as `Insufficient Quality Report` while it's one of the top5 probably looking at all the QA reports, so it's stuck in Validation repo, will have raise this in PJQA.
+
+
+[06/05/2024 00:28] tigerfrake
+I'm not sure any reports  have been moved to `findings` repo yet.  Give it a min
+
+
+[06/05/2024 01:29] dontonka
+On the contrary, they most likely all been moved I believe, the judge is progressing on the evaluation already. Anyway the fact that my report was marked as Insufficient Quality Report confirm it will not make it to the repo finding and will need to address it in PJQA, I hope this doesn't give me any disadvantage, we will see.
+
+
+[06/05/2024 17:01] kapitankalbasa
+are the results published ?
+
+
+[06/05/2024 19:45] tamayonft
+hey question, i dont see any tag in the findings, how is the dinamic i got some dup that are not in the findings repo
+
+
+[06/06/2024 01:44] tamayonft
+???
+
+
+[06/10/2024 17:25] ruan_53970
+Any news on the results yet.
+
+
+[06/12/2024 02:06] dontonka
+just saw they finalized the QA today, this should come very very soon.
+
+{Reactions}
+4739_Skeletor (4) 
+
+[06/13/2024 20:23] itsmetechjay
+🤑 🎉  Awards for **Arbitrum BOLD**:
+
+$105,573.46 USDC » @xuwinnie 
+$35,258.67 USDC » @Ch_301 
+$32,355.01 USDC » @0x73696d616f 
+$20,529.36 USDC » @SpicyMeatball 
+$18,947.37 USDC » @Sathish9098 
+$16,558.35 USDC » @Kow 
+$12,737.19 USDC » @Emmanuel 
+$10,526.32 USDC » @Rhaydden 
+$10,526.32 USDC » @0xladboy | Sparkware 
+$5,993.97 USDC » @dontonka 
+$5,993.97 USDC » @josephdara 
+
+🏁 Findings summary
+--------------------------------------—
+High risk findings: 2 unique (6 total)
+Med risk findings: 2 unique (4 total)
+QA reports: 23 (Best: Sathish9098)
+Top Hunter: xuwinnie
+Top Gatherer: xuwinnie
+
+Awards will be distributed on Arbitrum within the next week. Congratulations all!  💸 💸 💸
+
+*Note: If you participated in this audit and don’t see your name on this list, please wait until the report is published and the findings repo is made public to check on your submissions.*
+
+{Reactions}
+🫡 (9) 🎉 (7) xuwinnie (5) 
+
+[06/13/2024 20:26] josephdara
+Biggest reward so far. Thanks 🫡🫡🫡
+
+{Reactions}
+🎉 (16) hi5 (6) 
+
+[06/13/2024 20:27] sathish9098kumar
+So happy 😊 . First time top 5
+
+{Reactions}
+🎉 (11) hi5 (6) 
+
+[06/13/2024 20:33] sp1cymeatball
+same, lol
+
+{Reactions}
+code4rena hi5 (3) 
+
+[06/13/2024 20:40] adeolu
+Welldone @josephdara
+
+
+[06/13/2024 20:41] gumgumzum
+Congrats everyone, you guys are beasts 🔥🎉
+
+
+[06/13/2024 20:42] josephdara
+Thanks man
+
+{Reactions}
+🫡 ❤️ 
+
+[06/13/2024 20:42] josephdara
+Gg🫡🫡
+
+{Reactions}
+🫡 
+
+[06/13/2024 20:44] ladboy233
+@xuwinnie congrats
+
+{Reactions}
+😀 
+
+[06/13/2024 20:52] afriauditor
+congrats @josephdara @Rhaydden
+
+{Reactions}
+🔥 🫡 
+
+[06/13/2024 20:54] rhaydden
+Thank you Oga mi 🙏🏼
+
+{Reactions}
+🙌 
+
+[06/13/2024 21:02] minh___
+close enough 😄
+
+{Reactions}
+😀 
+
+[06/13/2024 21:02] olanre_waju
+Congratulations @josephdara 🎊
+
+{Reactions}
+🔥 
+
+[06/13/2024 21:08] __melonwater
+😀
+
+
+[06/13/2024 21:08] dontonka
+congrats everyone. we really need transparency about the `Hunter` and `Gatherer` calculation, as we don't wants bug as the partial feature to be present during months (or years) 😅 . Since there was only a unique Med, it feels wrong that he didn't get the Hunter.
+
+{Reactions}
+🫡 
+
+[06/13/2024 21:08] __melonwater
+congrats everyone!
+
+{Reactions}
+🫡 (10) 
+
+[06/13/2024 21:09] 0x73696d616f
+it's in the docs now I think
+https://docs.code4rena.com/awarding/incentive-model-and-awards#bonuses-for-top-competitors
+
+{Embed}
+https://docs.code4rena.com/awarding/incentive-model-and-awards
+Incentive model and awards | Code4rena
+
+{Reactions}
+thankyou (2) 
+
+[06/13/2024 21:10] dontonka
+gocha. look at it quickly, seems to make sense.
+
+{Reactions}
+👍 (2) 
+
+[06/14/2024 00:45] 0xshaheen
+Congrats Everyone. Solid Findings 🔥🫡
+
+
+[06/14/2024 01:02] khebotz7679
+Yo
+
+
+[06/14/2024 01:35] fktworld
+Congratulations to everyone
+
+{Reactions}
+🔥 
+
+[06/14/2024 03:09] .satyam_
+Congrats @Sathish9098 ser so happy for you well done
+
+{Reactions}
+❤️ 
+
+[06/14/2024 03:21] sathish9098kumar
+Thank you bro
+
+{Reactions}
+🥳 (2) 
+
+[06/14/2024 05:28] no.one7777
+can we see our issues
+
+
+[06/14/2024 14:42] dontonka
+you need SR role for that (back-stage), which is not your case, so you will need to wait for the report to be published which might takes months.
+
+
+[06/14/2024 14:42] no.one7777
+yeah i got it tnx
+
+
+[06/21/2024 19:50] itsmetechjay
+ℹ️ This channel is pending archive.   As a result, any private threads will be permanently deleted on Friday, 28 June 2024. Please make sure to grab anything you might need before then.
+
+
+[06/27/2024 22:53] itsmetechjay
+ℹ️ Reminder: this channel will be deleted in 24 hours.
+
+
+==============================================================
+Exported 309 message(s)
+==============================================================
